@@ -59,7 +59,7 @@ wayback()
 {
 	bar=" Initiating waybackurls..."
 	h1_bar
-	#waybackurls $tar | uniq | sort >url.txt
+	waybackurls $tar | uniq | sort >url.txt
 }
 
 # js files finder
