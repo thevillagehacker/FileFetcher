@@ -128,13 +128,6 @@ if [ $# -eq 0 ]
 then
     usage
     exit -1
-elif [ $# -eq 0 ]
-	then
-		ping -c 1 "$1" > /dev/null
-    	if [ $? -eq 0 ]; then 
-    		tar=$1
-    		main
-    	fi
 else
     tar=$1
     main
