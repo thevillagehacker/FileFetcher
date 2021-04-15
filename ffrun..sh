@@ -102,9 +102,10 @@ txtf(){
 
 # usage
 usage(){
-   cat << EOF
-	No inputs supplied check usage as below
-	Usage: ./ffrun.sh <target>
+	echo -e "\e[41m\033[1;97m Usage \033[0;37m"
+    cat << EOF
+	No inputs supplied please check the usage as below 👇 
+	run: ./ffrun.sh <target>
 	Output to files : ./ffrun.sh <target> -o
 
 EOF
