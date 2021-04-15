@@ -5,7 +5,7 @@ Fetches js, json, php, txt file from a list of URLS from waybackurls output.
 - [waybackurls](https://github.com/tomnomnom/waybackurls)
 
 ## Usage
-### To run single Target 
+### To run  
 ```sh
 ./ffrun.sh <target>
 ```
