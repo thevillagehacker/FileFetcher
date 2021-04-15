@@ -104,8 +104,8 @@ txtf(){
 usage(){
    cat << EOF
 	No inputs supplied check usage as below
-	Usage: ./run <target>
-	Output to files : ./run <target> -o
+	Usage: ./ffrun.sh <target>
+	Output to files : ./ffrun.sh <target> -o
 
 EOF
    exit 1
