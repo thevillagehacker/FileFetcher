@@ -13,5 +13,4 @@ Fetches js, json, php, txt file from a list of URLS from waybackurls output.
 ### To export results to files
 ```sh
 ./ffrun.sh <target> -o
-./ffrun.sh urls.txt -o
 ```
