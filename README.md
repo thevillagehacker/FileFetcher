@@ -2,7 +2,7 @@
 Fetches js, json, php, txt file from a list of URLS from waybackurls output.
 
 ## prerequisite
-- [waybackurls]()
+- [waybackurls](https://github.com/tomnomnom/waybackurls)
 
 ## Usage
 ### To run single Target 
@@ -10,7 +10,7 @@ Fetches js, json, php, txt file from a list of URLS from waybackurls output.
 ./ffrun.sh <target>
 ```
 
-### To run urls from file without running waybackurls
+### To run urls from file without running [waybackurls](https://github.com/tomnomnom/waybackurls)
 ```sh
 ./ffrun.sh urls.txt
 ```
