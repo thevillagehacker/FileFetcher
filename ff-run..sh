@@ -135,8 +135,8 @@ fi
 
 if [ "$2" = "-o" ]; then
 	mkdir ffresults
-	cat url.txt | grep "\\.js" | uniq | sort >results/js.txt
-  	cat url.txt | grep "\\.php" | uniq | sort >results/php.txt
-  	cat url.txt | grep "\\.json" | uniq | sort >results/json.txt
-  	cat url.txt | grep "\\.txt" | uniq | sort >results/txt.txt
+	cat url.txt | grep "\\.js" | uniq | sort >ffresults/js.txt
+  	cat url.txt | grep "\\.php" | uniq | sort >ffresults/php.txt
+  	cat url.txt | grep "\\.json" | uniq | sort >ffresults/json.txt
+  	cat url.txt | grep "\\.txt" | uniq | sort >ffresults/txt.txt
 	fi
