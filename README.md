@@ -1,7 +1,8 @@
 ![img](https://github.com/thevillagehacker/thevillagehacker/blob/master/Do%20Hacks%20to%20Secure.png)
 
 # FileFetcher
-Fetches js, json, php, txt file from a list of URLS from waybackurls output.
+Fetcher fetches js, JSON, PHP, txt file endpoints, and other sensitive file endpoints like pdf, xlsx, Docx, and CSV from a list of URLs from waybackurls output and 
+URLs that user-supplied as input to the fetcher.
 
 ## prerequisite
 - [waybackurls](https://github.com/tomnomnom/waybackurls)
