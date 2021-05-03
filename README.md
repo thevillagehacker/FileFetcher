@@ -7,6 +7,11 @@ Fetches js, json, php, txt file from a list of URLS from waybackurls output.
 - [waybackurls](https://github.com/tomnomnom/waybackurls)
 
 ## Usage
+## Usage
+```sh
+chmod +x fetcher.sh
+```
+
 ### To run fetcher against domain as input 
 ```sh
 ./fetcher.sh -d example.com
