@@ -3,16 +3,19 @@
 # FileFetcher
 Fetches js, json, php, txt file from a list of URLS from waybackurls output.
 
-## Prerequisite
+## prerequisite
 - [waybackurls](https://github.com/tomnomnom/waybackurls)
 
 ## Usage
-### To run  
+### To run fetcher against domain as input 
 ```sh
-./ffrun.sh <target>
+./fetcher.sh -d example.com
 ```
 
-### To export results to files
+### To fetch endpoints from input file which contains URLs
 ```sh
-./ffrun.sh <target> -o
+./fetcher.sh -f url.txt
 ```
+
+#### Note
+All Output results are stored separately in results folder
