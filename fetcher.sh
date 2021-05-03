@@ -39,7 +39,7 @@ space(){
 # H1 Initiation bar
 h1_bar() {  
     for i in {1..60}; do
-        echo -ne "\e[41m\033[1;97m \r${bar:0:$i} \033[0;37m" 
+        echo -ne "\e[41m\033[1;97m \r${bar:0:$i} \033[0;97m" 
         sleep 0.01                 
     done
     space
@@ -101,6 +101,16 @@ txtf(){
 	space
 }
 
+# other sensitive files 
+pdf(){
+
+	bar=" Checking for other sensitive Files... "
+	h2_bar	
+	cat url.txt | grep -E "\\.pdf|\\.xlsx|\\.csv|\\.docx" | uniq | sort | tee results/other_sensitive.txt
+	space
+}
+
+
 # usage
 usage(){
 	echo -e "\e[41m\033[1;97m Usage \033[0;37m"
@@ -123,6 +133,7 @@ main ()
 	phpf
 	jsonf
 	txtf
+	pdf
 	echo -e "\e[5m\e[42m\033[1;97m Completed \033[0;37m"	
 }
 
@@ -136,10 +147,9 @@ elif [ "$1" = "-f" ]; then
 	cat $2 | grep "\\.json" | uniq | sort >results/json.txt
 	cat $2 | grep "\\.php" | uniq | sort >results/php.txt
 	cat $2 | grep "\\.txt" | uniq | sort >results/text.txt
+	cat url.txt | grep -E "\\.pdf|\\.xlsx|\\.csv|\\.docx" | uniq | sort | tee results/other_sensitive.txt
 	echo -e "\e[5m\e[42m\033[1;97m Completed \033[0;37m"
 	else
 		usage
 
 fi
-
-
