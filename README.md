@@ -8,12 +8,11 @@ URLs that user-supplied as input to the fetcher.
 - [waybackurls](https://github.com/tomnomnom/waybackurls)
 
 ## Usage
-## Usage
 ```sh
 chmod +x fetcher.sh
 ```
 
-### To run fetcher against domain as input 
+### To run fetcher against single target as input 
 ```sh
 ./fetcher.sh -d example.com
 ```
